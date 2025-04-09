@@ -19,4 +19,7 @@ users on their respective 'lands' yet allows them to send bottles to other lands
 
 ## Project Wireframe
 
+Users will be greated by a bottle with a message inside. Once they click the bottle, the message will open up. The user then
+has the option to write their message and replace the current message. Below is the rough framework of this idea:
+
 ![wireframe](/img/moqup.png)
