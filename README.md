@@ -19,25 +19,33 @@ This site will mainly manage strings given by the users. These simple messages w
 filtered before being stored for the next user to retrieve. These filters will likely include a JSON file to be consulted to 
 avoid bad or inappropriate language as well as a code-injection filter to prevent hackers. 
 
-This site has a lot of potential stretch goals - although it is a simple concept, the ceiling to this project can get pretty 
-high pretty fast. The beginning of this project will focus on simple functionality. The proper function should look something 
+This site has a lot of potential for stretch goals - although it is a simple concept, the ceiling to this project can get pretty 
+high pretty fast. Unfortunately, there is only so much time to finish this project. With that being said, the final form of
+this will be to create a simple structure of the site demonstrating the concept while also offering a fun time waster for those
+curious or bored. This involves a landing page showing a message in a bottle that, when clicked on, will redirect the user to a
+new page with an open message and a form to write their own (replace button included).
+
+The beginning of this project will focus on simple functionality. The proper function should look something 
 like this: I will create a simple start message, PUT that message in the database, let the site GET that message for the user, 
 then, if the user decides to replace it, let the site DELETE that message and PUT the new message in the database for the next
 user (or current). The database will likely be stored on the AWS server. If I wanted to keep this project going longer 
 post-graduation, I would have to consider an alternative service as I lose access to my student accounts.
 
-This simple design will involve no animations or wild formatting at first, just to make sure the site works as intended. Then, 
-these fun things can be added! This includes animations for the bottle, color to the page (or lack-of in order to keep it 
-clean), maybe even a custom font for the messages to look more like written ones you'd assume to find in bottles. Beyond that, 
-further stretch goals would be to add several bottles, then perhaps a voting system on what messages get stored in which 
+This initial simple design will involve no animations or wild formatting at first, just to make sure the site works as intended. Then, 
+with extra time available, these fun things can be added! This includes animations for the bottle, color to the page (or lack-of in 
+order to keep it clean), maybe even a custom font for the messages to look more like written ones you'd assume to find in bottles.
+
+Beyond that, further stretch goals would be to add several bottles, then perhaps a voting system on what messages get stored in which 
 bottles, perhaps a land-locked method that keeps users on their respective 'lands' yet allows them to send bottles to other 
 lands - the sky gets wide with some creativity involved.
 
-*A note for myself - one fun stretch goal might be learning how to handle what the user sees after they "cast the bottle back
+One fun stretch goal might be learning how to handle what the user sees after they "cast the bottle back
 into the ocean" (write their message and replace). Maybe the database could store the session ID of the most recent user?
 Then, while that session ID matches, it keeps the user on a screen where the bottle can be seen drifting away or something.
 If another user then accesses the bottle and replaces the message, the current user is then greeted by the normal start-up
 screen.
+
+Either way, I hope this site can be enjoyed for what it's worth and provide a novel 10 seconds of entertainment for those stopping by.
 
 
 ## Project Wireframe
