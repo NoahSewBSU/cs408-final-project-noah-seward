@@ -36,7 +36,7 @@ lands - the sky gets wide with some creativity involved.
 
 ## Project Wireframe
 
-Users will be greated by a bottle with a message inside. Once they click the bottle, the message will open up. The user then
+Users will be greeted by a bottle with a message inside. Once they click the bottle, the message will open up. The user then
 has the option to write their message and replace the current message. Below is the rough framework of this idea:
 
 ![wireframe](/img/moqup.png)
