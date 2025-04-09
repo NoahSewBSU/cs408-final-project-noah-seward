@@ -1,12 +1,20 @@
 # Message in a Bottle
 
-## Project Spec
+## Overview
 
-Welcome to “Message in a Bottle”! 
+Welcome to “Message in a Bottle”! This is my final project for my CS 408 class at Boise State University. The intention of this
+final project is to implement a full-stack website. This will involve using HTML, CSS, and JS on the front-end, and then using
+AWS for the database on the backend. Several JSON files may be used as necessary (for word filters, for instance). The project
+I have chosen is to display a message in a bottle for the user, who can then replace that message with their own for the next
+person.
 
-The general theme of this website is a fun, autonomous "chat room" with a twist - only one 
-saved message at a time, and no real way to confirm who you're speaking with. This site is going to offer users a chance to 
-read a message from a "bottle" and decide whether or not to replace that message with their own for others to see. 
+## General Theme
+
+The general theme of this website is a fun, autonomous "chat room" with a twist - only one saved message at a time, and no real 
+way to confirm who you're speaking with. This site is going to offer users a chance to read a message from a "bottle" and decide 
+whether or not to replace that message with their own for others to see. 
+
+## Target Audience
 
 There is no real target audience for this site, as the reason for wanting to use a message in a bottle can vary. If anything, 
 the target audience of this site is most likely going to be those seeking a novel experience - probably bored people at work, 
@@ -15,9 +23,7 @@ jokes, or perhaps even strike up a conversation (or even butt into one!). It’s
 site that doesn’t need more than 5 seconds to load; hopefully, this site will involve low processing and be easy to access in 
 order to best help fix that craving for distraction or curiosity, fast.
 
-This site will mainly manage strings given by the users. These simple messages will have a max character count and will be 
-filtered before being stored for the next user to retrieve. These filters will likely include a JSON file to be consulted to 
-avoid bad or inappropriate language as well as a code-injection filter to prevent hackers. 
+## Anticipated Product
 
 This site has a lot of potential for stretch goals - although it is a simple concept, the ceiling to this project can get pretty 
 high pretty fast. Unfortunately, there is only so much time to finish this project. With that being said, the final form of
@@ -25,11 +31,19 @@ this will be to create a simple structure of the site demonstrating the concept 
 curious or bored. This involves a landing page showing a message in a bottle that, when clicked on, will redirect the user to a
 new page with an open message and a form to write their own (replace button included).
 
-The beginning of this project will focus on simple functionality. The proper function should look something 
-like this: I will create a simple start message, PUT that message in the database, let the site GET that message for the user, 
-then, if the user decides to replace it, let the site DELETE that message and PUT the new message in the database for the next
-user (or current). The database will likely be stored on the AWS server. If I wanted to keep this project going longer 
-post-graduation, I would have to consider an alternative service as I lose access to my student accounts.
+## How Will It Function?
+
+This site will mainly manage strings given by the users. These simple messages will have a max character count and will be 
+filtered before being stored for the next user to retrieve. These filters will likely include a function which references a 
+JSON file to be consulted to avoid bad or inappropriate language as well as a code-injection filter to prevent hackers.
+
+The proper function should look something like this: I will create a simple start message, PUT that message in the database, 
+let the site GET that message for the user, then, if the user decides to replace it, let the site DELETE that message and PUT 
+the new message in the database for the nextuser (or current). The database will likely be stored on the AWS server. If I 
+wanted to keep this project going longer post-graduation, I would have to consider an alternative service as I lose access to 
+my student accounts.
+
+## Extras and Stretch Goals
 
 This initial simple design will involve no animations or wild formatting at first, just to make sure the site works as intended. Then, 
 with extra time available, these fun things can be added! This includes animations for the bottle, color to the page (or lack-of in 
