@@ -19,6 +19,4 @@ users on their respective 'lands' yet allows them to send bottles to other lands
 
 ## Project Wireframe
 
-TODO: Replace the wireframe below with you own design.
-
-![wireframe](wireframe-example.png)
+![wireframe](/img/moqup.png)
