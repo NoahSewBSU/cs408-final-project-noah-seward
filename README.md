@@ -33,6 +33,12 @@ further stretch goals would be to add several bottles, then perhaps a voting sys
 bottles, perhaps a land-locked method that keeps users on their respective 'lands' yet allows them to send bottles to other 
 lands - the sky gets wide with some creativity involved.
 
+*A note for myself - one fun stretch goal might be learning how to handle what the user sees after they "cast the bottle back
+into the ocean" (write their message and replace). Maybe the database could store the session ID of the most recent user?
+Then, while that session ID matches, it keeps the user on a screen where the bottle can be seen drifting away or something.
+If another user then accesses the bottle and replaces the message, the current user is then greeted by the normal start-up
+screen.
+
 
 ## Project Wireframe
 
