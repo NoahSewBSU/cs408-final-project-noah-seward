@@ -2,7 +2,9 @@
 
 ## Project Spec
 
-Welcome to “Message in a Bottle”! The general theme of this website is a fun, autonomous "chat room" with a twist - only one 
+Welcome to “Message in a Bottle”! 
+
+The general theme of this website is a fun, autonomous "chat room" with a twist - only one 
 saved message at a time, and no real way to confirm who you're speaking with. This site is going to offer users a chance to 
 read a message from a "bottle" and decide whether or not to replace that message with their own for others to see. 
 
