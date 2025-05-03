@@ -23,6 +23,10 @@ body {
     cursor: pointer;
 }
 
+.wide-class{
+    width: 150px;
+}
+
 #message-display{
     padding: 10px;
     margin: 10px;

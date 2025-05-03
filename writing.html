@@ -13,30 +13,28 @@
   <h1>Read the message, write your own</h1>
   <img src="img/bottle_empty.png" width="150" alt="an empty bottle">
 
-    <p>Message, from the bottle:</p>
-
-    <button id="show-message">Show Message</button>
     <div id="message-display">
-        <p>Select "show message" to read the message</p>
     </div>
+    <button id="show-message">Show Message</button>
 
     <p>Would you like to replace this message?</p>
     <p>*Be warned, once it has been replaced, there is no going back!*</p>
-    <form id="new-message">
-        <textarea id="new-message" name="message" rows="4" cols="50" placeholder="Write here! (100 characters max)"></textarea><br>
-        <button id="update-button">Replace Message</button>
-    </form>
+
+    <input type="text" class="wide-class" id="new-message" placeholder="Enter new message" maxlength ="100">
+    <button id="update-button">Replace Message</button>
     
+    
+    <script src="/js/script.js">
+      if (newMessage.length > 100) {
+        alert("Message must be 100 characters or less.");
+        return;
+      }
+    </script>
   <script type="module" src="js/main.js"></script>
   <br>
   <a href="send-off.html" class="button">throw bottle back in the water</a>
 </body>
 
-<script src="/js/script.js">
-  if (newMessage.length > 100) {
-    alert("Message must be 100 characters or less.");
-    return;
-  }
-</script>
+
 
 </html>
