@@ -8,10 +8,12 @@ body {
   padding: 0;
   background-color: #87CEEB; /* Sky Blue */
   background-image: linear-gradient(180deg, #87CEEB 0%, #FFCC99 100%); /* Ocean to Sand */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #2E3D4D; /* Dark Blue for text */
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 
@@ -146,4 +148,18 @@ img:hover {
   border-radius: 8px;
   font-size: 1.1rem;
   color: #2E3D4D;
+  width: 500px;
 }
+
+#new-message {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: #2E3D4D;
+}
+
