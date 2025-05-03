@@ -10,6 +10,16 @@ body {
     place-items: center;
 }
 
+href{
+    text-decoration: none;
+    color: #0000EE;
+    width: 250px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -21,10 +31,48 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    width: 250px;
+}
+
+.button-red {
+  background-color: #FF0000;/* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.button-blue {
+  background-color: #0000EE;/* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
 }
 
 .wide-class{
     width: 150px;
+}
+
+.message-display{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 500px;
 }
 
 #message-display{

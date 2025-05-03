@@ -89,6 +89,27 @@ document.getElementById("update-button").addEventListener("click", () => {
   updateMessage(newMessage);
 });
 
+function deleteMessage() {
+  let xhr = new XMLHttpRequest();
+  const payload = { id: "text" }; // ID in the table
+
+  xhr.addEventListener("load", function () {
+    if (xhr.status === 200) {
+      alert("Message deleted successfully!");
+      document.getElementById("message-display").textContent = ""; // Clear the display
+    } else {
+      console.error("Failed to delete message. Status code:", xhr.status);
+    }
+  });
+
+  xhr.open("DELETE", `${apiUrl}/text`); // Initialize a DELETE request to the API URL
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(JSON.stringify(payload));
+}
+
+document.getElementById("delete-button").addEventListener("click", deleteMessage);
+
+
 /**
  * Check for malicious content in the message (SQL injection and XSS)
  */

@@ -131,6 +131,52 @@ function containsMaliciousContent(input) {
 
 }
 
+function deleteMessage() {
+    let xhr = new XMLHttpRequest();
+    const payload = { id: "sand" }; // ID in the table
+  
+    xhr.addEventListener("load", function () {
+      if (xhr.status === 200) {
+        alert("Message deleted successfully!");
+        document.getElementById("message-display").textContent = ""; // Clear the display
+      } else {
+        console.error("Failed to delete message. Status code:", xhr.status);
+      }
+    });
+  
+    xhr.open("DELETE", `${apiUrl}/sand`); // Initialize a DELETE request to the API URL
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify(payload));
+  }
+  
+  document.getElementById("delete-button").addEventListener("click", deleteMessage);
+
+  function loadAllMessages() {
+    let xhr = new XMLHttpRequest();
+  
+    xhr.addEventListener("load", function () {
+      if (xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText); // Parse JSON response
+        const displayDiv = document.getElementById("all-messages-display");
+        displayDiv.innerHTML = ""; // Clear previous content
+  
+        data.forEach(item => {
+          const messageItem = document.createElement("div");
+          messageItem.textContent = `ID: ${item.id} - Message: ${item.message}`;
+          displayDiv.appendChild(messageItem);
+        });
+      } else {
+        console.error("Failed to load messages. Status code:", xhr.status);
+      }
+    });
+  
+    xhr.open("GET", `${apiUrl}`);
+    xhr.send();
+  }
+
+  document.getElementById("show-all-button").addEventListener("click", loadAllMessages);
+
+  
 // TODO bad words filter
 
 
