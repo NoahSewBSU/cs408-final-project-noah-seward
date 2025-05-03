@@ -7,8 +7,11 @@
   "author": "Pat von Student",
   "scripts": {
     "lint:html": "htmlhint"
-    },
+  },
   "devDependencies": {
     "qunit": "^2.21.1"
+  },
+  "dependencies": {
+    "bad-words": "^4.0.0"
   }
 }

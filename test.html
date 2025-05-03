@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/bad-words@3.0.4/dist/bad-words.min.js"></script>
+</head>
+<body>
+  <h1>Test Message</h1>
+  <p id="message-display">Current Message: </p>
+  <button id="show-message">Show Message</button>
+
+  <input type="text" id="new-message" placeholder="Enter new message" maxlength ="100">
+  <button id="update-button">Update Message</button>
+  
+
+  <script src="/js/script.js">
+    if (newMessage.length > 100) {
+      alert("Message must be 100 characters or less.");
+      return;
+    }
+  </script>
+</body>
+</html>

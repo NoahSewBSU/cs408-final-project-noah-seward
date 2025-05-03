@@ -15,21 +15,28 @@
 
     <p>Message, from the bottle:</p>
 
+    <button id="show-message">Show Message</button>
     <div id="message-display">
-        <p>"Hello! I am a message in a bottle. I hope you find me and send me off to someone else!"</p>
-        <p>- Anonymous</p>
+        <p>Select "show message" to read the message</p>
     </div>
 
     <p>Would you like to replace this message?</p>
     <p>*Be warned, once it has been replaced, there is no going back!*</p>
-    <form id="message">
-        <textarea id="message-form" name="message" rows="4" cols="50" placeholder="Write here! (100 characters max)"></textarea><br>
-        <input type="submit" value="Replace Message">
+    <form id="new-message">
+        <textarea id="new-message" name="message" rows="4" cols="50" placeholder="Write here! (100 characters max)"></textarea><br>
+        <button id="update-button">Replace Message</button>
     </form>
     
   <script type="module" src="js/main.js"></script>
   <br>
   <a href="send-off.html" class="button">throw bottle back in the water</a>
 </body>
+
+<script src="/js/script.js">
+  if (newMessage.length > 100) {
+    alert("Message must be 100 characters or less.");
+    return;
+  }
+</script>
 
 </html>
